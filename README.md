@@ -20,3 +20,37 @@ will initialize the players `random_rps` and `switchbot`, then play 1001 rounds 
 
 *Tournaments* - The `tournament` function can be used to play a large number of games amongst a collection of bots.  It will then print out the results of the tournament.
 
+The default tournament produces the following kind of output:
+
+    sage: %time tournament()
+    Number of players:  23
+    Games per player:  66
+    Average number of games won:  32.8
+    Sdev of games won:  15.5
+    55 	|   Bayes 3
+    53 	|   Rfind
+    50 	|   Bayes 5
+    50 	|   Terminator
+    49 	|   Bayes 1
+    49 	|   Bayes 4
+    48 	|   Bayes 2
+    47 	|   Frequentist 3
+    46 	|   Frequentist 4
+    45 	|   Bayes 6
+    36 	|   Michael Jackson
+    33 	|   Naive Bayes 1
+    28 	|   Randy
+    27 	|   ho0m4nbot
+    26 	|   Naive Bayes 20
+    21 	|   Freqbot
+    18 	|   Switchbot
+    16 	|   Smrt Homer
+    14 	|   Edward Scissorhands
+    13 	|   Lisa Simpson
+    12 	|   Random bias (0.11, 0.87)
+    10 	|   Bart Simpson
+    9 	|   noskcaJ leahciM
+    CPU times: user 27.88 s, sys: 0.07 s, total: 27.95 s
+    Wall time: 28.01 s
+
+followed by a matrix encoding how many games were won between pairs of bots.
